@@ -1,0 +1,62 @@
+.CardHolder {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    justify-content: space-around;
+
+
+}
+
+.CardContainer {
+    width: 300px;
+    padding: 20px;
+    flex-shrink: 0;
+
+}
+
+.Header {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    flex-shrink: 0;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.2em;
+
+    margin-bottom: 10vh;
+
+}
+
+
+
+.TextHandleHeaderContainer {
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.App {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.ui.card  {
+    margin: 0 !important;
+}
+
+@media screen and (max-width: 700px) {
+    .Header {
+        flex-flow: column;
+    }
+}
