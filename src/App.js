@@ -87,8 +87,9 @@ class App extends Component {
             isConnected: false
         };
 
-        //const serverSocket = io();
-        const serverSocket = io('http://141.44.194.18:8002/');
+        const serverSocket = io();
+        //
+        // const serverSocket = io('http://141.44.194.18:8002/');
         serverSocket.on('connect', () => {
             this.setState({
                 isConnected: true,
